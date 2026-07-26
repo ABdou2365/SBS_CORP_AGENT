@@ -12,7 +12,13 @@ import java.util.Map;
 @Service
 public class FixedSizeChunker {
 
+
     public List<Chunk> chunk(IngestedDocument document, int chunkSize) {
+        return chunk(document, chunkSize, 0);
+    }
+
+
+    public List<Chunk> chunk(IngestedDocument document, int chunkSize, int overlap) {
         List<Chunk> chunks = new ArrayList<>();
 
         String content = document.getContent();
@@ -32,7 +38,11 @@ public class FixedSizeChunker {
                     chunkIndex
             ));
             chunkIndex += 1;
-            start = end;
+            if (end < content.length()) {
+                start = end - overlap;
+            }else {
+                start = end;
+            }
         }
 
         return chunks;

@@ -14,30 +14,39 @@ import java.util.List;
 
 @SpringBootTest
 public class FixedSizeChunkerTest {
-
     private static final Logger log = LoggerFactory.getLogger(FixedSizeChunkerTest.class);
 
+    @Autowired
+    private IngestionOrchestrator ingestionOrchestrator;
 
     @Autowired
-    IngestionOrchestrator ingestionOrchestrator;
-
-    @Autowired
-    FixedSizeChunker fixedSizeChunker;
+    private FixedSizeChunker chunker;
 
     @Test
-    public void fixedSizeChunkerTest() throws Exception {
-
+    public void chunkerTest() throws Exception {
         List<IngestedDocument> documents = ingestionOrchestrator.ingestAll();
-        IngestedDocument firstIngestedDocument = documents.get(0);
 
-        List<Chunk> chunks = fixedSizeChunker.chunk(firstIngestedDocument,500);
+        IngestedDocument document = documents.get(0);
 
-        log.info("----- Chunks for Document: {} -----", firstIngestedDocument.getSource());
+        /* WITH NO OVERLAP */
+        log.info("----- Chunking with no overlap -----");
+        List<Chunk> chunks = chunker.chunk(document, 500);
+        logIngestedChunks(document, chunks);
+
+        log.info("----- Chunking with overlap -----");
+        List<Chunk> chunksOverlaps = chunker.chunk(document, 500,100);
+        logIngestedChunks(document, chunksOverlaps);
+
+    }
+
+    private static void logIngestedChunks(IngestedDocument document, List<Chunk> chunks) {
+        log.info("Source: {}", document.getSource());
+        log.info("Original length: {}", document.getContent().length());
+        log.info("Total chunks: {}", chunks.size());
+
         for (Chunk chunk : chunks) {
-            log.info("Chunk source: {}", chunk.getSource());
-            log.info("Chunk index: {}", chunk.getChunkIndex());
-            log.info("Chunk content: {}", chunk.getContent());
+            log.info("---- Chunk {} ----", chunk.getChunkIndex());
+            log.info(chunk.getContent());
         }
-
     }
 }
