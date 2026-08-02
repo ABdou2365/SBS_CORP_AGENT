@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ChunkingOrchestratorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ChunkingOrchestratorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.nexacorp.ai.chunking.html">com.nexacorp.ai.chunking</a> &gt; ChunkingOrchestratorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.056s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAllChunks()</td>
+<td class="success">1.056s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:16:49.067 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.chunking.ChunkingOrchestratorTest]: ChunkingOrchestratorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:16:49.136 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.chunking.ChunkingOrchestratorTest
+21:16:49.175 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.chunking.ChunkingOrchestratorTest]: ChunkingOrchestratorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:16:49.176 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.chunking.ChunkingOrchestratorTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::       (v4.0.5-SNAPSHOT)
+
+?[32m21:16:49.328?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Starting ChunkingOrchestratorTest using Java 17.0.19 with PID 26106 (started by abdellah in /Users/abdellah/Downloads/[ WebToolTip.com ] Udemy - Spring AI + RAG - Build Production-Grade AI with Your Data/~Get Your Files Here !/1 - Project Setup &amp; Spring AI Sanity Check/Spring-AI-RAG-course-module1.3-basic-chat)
+?[32m21:16:49.329?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - No active profile set, falling back to 1 default profile: &quot;default&quot;
+?[32m21:16:50.258?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Started ChunkingOrchestratorTest in 1.028 seconds (process running for 1.682)
+?[32m21:16:50.736?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - Ingesting PDF: HR_Leave_Policy.pdf
+?[32m21:16:51.035?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - ----- Extracted Text (HR_Leave_Policy.pdf) -----
+?[32m21:16:51.035?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - NexaCorp – HR Leave Policy
+Last Updated: April 2024
+1. Introduction
+This document defines the official leave policy for employees of NexaCorp. The policy applies to all
+full-time employees and outlines various types of leave, approval workflows, and special cases.
+2. Types of Leave
+NexaCorp provides the following types of leave: Paid Leave (PL), Sick Leave (SL), Casual Leave
+(CL), and Unpaid Leave. Each leave type serves a different purpose and is governed by specific
+rules.
+3. Paid Leave Policy
+Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
+forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
+lapse automatically.
+4. Sick Leave Policy
+Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
+Leave exceeds two consecutive working days. Extended sick leave may require HR approval.
+5. Leave Approval Workflow
+All leave requests must be submitted through the internal HR system. Manager approval is
+mandatory for Paid and Unpaid Leave. HR approval is required for extended leave beyond 10
+working days.
+6. Special Leave Cases
+NexaCorp provides maternity leave, paternity leave, and extended medical leave as per applicable
+labor laws and company guidelines.
+7. Policy Updates
+This policy may be updated periodically. Employees are advised to refer to official HR
+announcements for the latest updates. In case of discrepancies, the latest policy document takes
+precedence.
+
+?[32m21:16:51.036?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - Ingesting PDF: IT_Access_Control_Policy.pdf
+?[32m21:16:51.043?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - ----- Extracted Text (IT_Access_Control_Policy.pdf) -----
+?[32m21:16:51.043?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - NexaCorp – IT Access Control Policy
+Last Updated: January 2024
+1. Purpose
+This policy defines how access to NexaCorp systems, applications, and infrastructure is granted,
+reviewed, and revoked. The goal is to enforce the principle of least privilege.
+2. Types of Access
+Access may be granted to applications, databases, cloud infrastructure, and internal tools. Each
+access type carries different levels of risk and approval requirements.
+3. Role-Based Access Control
+Access is assigned based on employee roles such as Engineering, HR, Support, and Operations.
+Elevated privileges are granted only when justified by business needs.
+4. Access Request Process
+Employees must submit access requests through the internal access management system.
+Requests require manager approval and may require security team review.
+5. Periodic Access Reviews
+Access rights are reviewed periodically to ensure they remain appropriate. Unnecessary access is
+revoked as part of regular audits.
+6. Employee Exit Procedures
+Upon employee termination or role change, all system access must be reviewed and adjusted.
+Access to critical systems must be revoked immediately upon exit.
+
+?[32m21:16:51.043?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - Ingesting PDF: Data_Privacy_Guidelines.pdf
+?[32m21:16:51.054?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - ----- Extracted Text (Data_Privacy_Guidelines.pdf) -----
+?[32m21:16:51.054?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - NexaCorp – Data Privacy Guidelines
+Last Updated: May 2024
+1. Introduction to Data Privacy
+NexaCorp is committed to protecting the privacy of personal and sensitive data. These guidelines
+define how personal data must be collected, processed, stored, and shared within the organization.
+2. Types of Data
+Data handled by NexaCorp may include personal data, sensitive personal data, and confidential
+business information. Each type of data requires different levels of protection.
+3. Data Collection Principles
+Personal data must be collected only for legitimate business purposes and with appropriate
+consent. Data collection must be limited to what is necessary.
+4. Data Storage and Retention
+Personal data must be stored securely and retained only for the duration necessary to fulfill its
+purpose. Retention periods vary by data category.
+5. Data Access Controls
+Access to personal data must be restricted based on job role and business need. All access must
+be logged and auditable.
+6. Data Breach Handling
+Any suspected data breach must be reported immediately to the Data Protection Officer. Timely
+investigation and notification procedures must be followed.
+
+?[32m21:16:51.054?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - Ingesting PDF: Information_Security_Policy.pdf
+?[32m21:16:51.062?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - ----- Extracted Text (Information_Security_Policy.pdf) -----
+?[32m21:16:51.062?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - NexaCorp – Information Security Policy
+Last Updated: February 2024
+1. Policy Overview
+This Information Security Policy defines NexaCorp's approach to protecting company data,
+systems, and infrastructure from unauthorized access, misuse, or loss.
+2. Password and Authentication Standards
+All users must use strong passwords with a minimum length of 12 characters. Multi-factor
+authentication (MFA) is mandatory for accessing internal systems.
+3. Device Security
+Company-issued devices must be encrypted and protected with approved security software.
+Personal devices may access company systems only through approved secure channels.
+4. Network Security
+Employees must use the company VPN when accessing internal resources remotely. Use of public
+Wi-Fi without VPN is strictly prohibited.
+5. Data Handling and Classification
+Data is classified as Public, Internal, Confidential, or Restricted. Handling and sharing of data must
+follow classification-specific guidelines.
+6. Incident Reporting
+Any suspected security incident must be reported to the Information Security team within 24 hours
+using the official incident reporting channel.
+7. Policy Violations
+Violations of this policy may result in disciplinary action, including termination and potential legal
+consequences depending on severity.
+
+?[32m21:16:51.062?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - Ingesting PDF: Employee_Onboarding_Guide.pdf
+?[32m21:16:51.068?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - ----- Extracted Text (Employee_Onboarding_Guide.pdf) -----
+?[32m21:16:51.068?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.p.PdfIngestionService?[0;39m - NexaCorp – Employee Onboarding Guide
+Last Updated: March 2024
+1. Welcome to NexaCorp
+Welcome to NexaCorp. This guide is designed to help new employees understand the company,
+complete onboarding tasks, and get productive quickly.
+2. First Week Checklist
+During your first week, complete the following tasks: submit HR documents, collect your employee
+ID card, and attend mandatory orientation sessions.
+3. IT Setup
+New employees will receive company laptops pre-configured with standard tools. Email accounts,
+VPN access, and internal tool access will be provisioned by IT.
+4. Access Requests
+If additional system access is required, employees must submit an access request through the
+internal portal. Manager approval is mandatory for elevated access.
+5. Security Awareness
+Employees are required to follow company security policies including strong password usage,
+device security practices, and reporting suspicious activities.
+6. Support Contacts
+For HR-related questions, contact hr@nexacorp.internal. For IT support, reach out to
+it-support@nexacorp.internal.
+
+?[32m21:16:51.068?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: authentication-flow.md
+?[32m21:16:51.069?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (authentication-flow.md) -----
+?[32m21:16:51.069?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # Authentication Flow at NexaCorp
+
+## Overview
+NexaCorp uses a centralized authentication system to manage user identity and access
+across all internal and customer-facing applications.
+
+## Authentication Mechanism
+- Users authenticate using company-issued credentials
+- Single Sign-On (SSO) is enabled across internal systems
+- Multi-Factor Authentication (MFA) is mandatory for sensitive operations
+
+## Login Flow
+1. User accesses an internal application
+2. Request is redirected to the Authentication Service
+3. Credentials are validated
+4. MFA challenge is performed if required
+5. Access token is issued upon successful authentication
+
+## Token Management
+- Access tokens are short-lived
+- Refresh tokens are securely stored
+- Tokens include user role and department metadata
+
+## Common Issues
+- Expired tokens causing access failures
+- MFA challenges not completed
+- Clock skew between services
+
+## Related Policies
+Refer to the Information Security Policy for password and MFA requirements.
+
+?[32m21:16:51.069?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: api-guidelines.md
+?[32m21:16:51.069?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (api-guidelines.md) -----
+?[32m21:16:51.069?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # API Guidelines at NexaCorp
+
+## Purpose
+This document defines the standard guidelines for designing, building, and maintaining APIs at NexaCorp.
+All teams are expected to follow these guidelines to ensure consistency, security, and reliability.
+
+## API Design Principles
+- APIs should be RESTful and resource-oriented
+- Use clear and consistent naming conventions
+- Avoid breaking changes whenever possible
+- Version APIs explicitly when changes are required
+
+## Authentication &amp; Authorization
+- All APIs must be secured using the centralized authentication system
+- Authorization checks must be enforced at the service layer
+- Sensitive endpoints require elevated privileges
+
+## Error Handling
+- Use standard HTTP status codes
+- Error responses must include meaningful error messages
+- Avoid exposing internal implementation details in errors
+
+## Logging &amp; Monitoring
+- All APIs must log incoming requests and responses (excluding sensitive data)
+- Errors and latency metrics must be monitored
+- Critical APIs should have alerts configured
+
+## Rate Limiting
+- Public-facing APIs must enforce rate limits
+- Internal APIs may apply rate limits based on usage patterns
+- Abuse or excessive usage must be flagged automatically
+
+## Related Documentation
+Refer to the Authentication Flow and Authorization Model documents for security-related guidelines.
+
+?[32m21:16:51.070?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: troubleshooting-common-issues.md
+?[32m21:16:51.070?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (troubleshooting-common-issues.md) -----
+?[32m21:16:51.070?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # Troubleshooting Common Issues at NexaCorp
+
+## Overview
+This document lists common issues encountered by employees while using NexaCorp's internal systems,
+along with recommended troubleshooting steps.
+
+## Login &amp; Access Issues
+### Unable to Log In
+- Verify username and password
+- Ensure MFA device is available
+- Check if account is locked due to failed attempts
+
+### Access Denied Errors
+- Confirm assigned role and department
+- Verify that access has been approved
+- Check if permissions were recently updated
+
+## VPN &amp; Network Issues
+- Ensure VPN client is installed and running
+- Reconnect VPN before accessing internal resources
+- Avoid public Wi-Fi without VPN
+
+## Application Errors
+- Clear browser cache and retry
+- Check system status page for outages
+- Report persistent errors to IT Support
+
+## Data Access Issues
+- Some data may be restricted based on role
+- Recently updated policies may not be immediately visible
+- Contact data owners for clarification
+
+## Getting Help
+- IT Support: it-support@nexacorp.internal
+- HR Support: hr@nexacorp.internal
+
+## Related Documents
+Refer to Authentication Flow, Authorization Model, and Information Security Policy for detailed guidance.
+
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: deployment-architecture.md
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (deployment-architecture.md) -----
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # Deployment Architecture at NexaCorp
+
+## Overview
+NexaCorp deploys its applications using a cloud-native architecture designed for scalability,
+resilience, and security. All core services are containerized and managed centrally.
+
+## Infrastructure Model
+- Applications run as Docker containers
+- Containers are orchestrated using Kubernetes
+- Separate environments exist for Dev, QA, and Production
+
+## Service Deployment
+Each service is deployed independently and can be scaled based on demand.
+Stateless services are preferred wherever possible to simplify scaling.
+
+## Configuration Management
+- Configuration is externalized using environment variables and config files
+- Secrets are managed using a secure secrets manager
+- No sensitive data is stored directly in application code
+
+## Networking &amp; Security
+- Services communicate over internal networks
+- External access is routed through an API Gateway
+- Network policies restrict unauthorized service communication
+
+## Observability
+- Centralized logging is enabled for all services
+- Metrics are collected for latency, error rates, and throughput
+- Alerts are configured for critical system failures
+
+## Related Documentation
+Refer to the API Guidelines and Information Security Policy for additional operational standards.
+
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: authorization-model.md
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (authorization-model.md) -----
+?[32m21:16:51.071?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # Authorization Model at NexaCorp
+
+## Overview
+Authorization at NexaCorp determines what authenticated users are allowed to access
+within internal systems. Authorization decisions are based on roles, departments,
+and business context.
+
+## Role-Based Access Control (RBAC)
+NexaCorp uses RBAC as the primary authorization mechanism. Common roles include:
+- Engineering
+- HR
+- Support
+- Operations
+- Security
+
+Each role has predefined access permissions to applications, data, and tools.
+
+## Department-Based Constraints
+In addition to roles, access may be constrained by department. For example:
+- HR users can access employee records and HR policies
+- Engineering users can access technical documentation and source repositories
+- Support users can access customer-facing knowledge bases
+
+## Privileged Access
+Certain operations require elevated privileges:
+- Access to production systems
+- Viewing confidential security reports
+- Managing user access and roles
+
+Privileged access requires additional approval and is audited regularly.
+
+## Authorization Tokens
+Authorization information is embedded in access tokens issued during authentication.
+Tokens typically include:
+- User role
+- Department
+- Access scopes
+
+## Common Authorization Issues
+- Access denied due to missing role
+- Stale permissions after role change
+- Insufficient privileges for sensitive operations
+
+## Related Documents
+Refer to the IT Access Control Policy for detailed access request and review processes.
+
+?[32m21:16:51.077?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - Ingesting Wiki: platform-overview.md
+?[32m21:16:51.077?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - ----- Wifi Content (platform-overview.md) -----
+?[32m21:16:51.077?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.w.WikiIngestionService?[0;39m - # NexaCorp Platform Overview
+
+## Introduction
+NexaCorp is a B2B SaaS company that provides cloud-based workflow and analytics solutions
+for enterprise customers. The platform is designed to be modular, scalable, and secure.
+
+## High-Level Architecture
+The NexaCorp platform consists of the following major components:
+- API Gateway
+- Authentication &amp; Authorization Service
+- Core Business Services
+- Data Processing Pipelines
+- Reporting &amp; Analytics Engine
+
+All services are deployed as containerized applications and communicate over secure APIs.
+
+## Core Domains
+The platform is divided into multiple business domains:
+- User Management
+- Workflow Orchestration
+- Analytics &amp; Reporting
+- Integrations
+
+Each domain owns its data and exposes APIs to other services.
+
+## Technology Stack
+- Backend: Java, Spring Boot
+- Databases: PostgreSQL, Redis
+- Messaging: Kafka
+- Cloud: Kubernetes-based infrastructure
+
+## Documentation &amp; Ownership
+Each team is responsible for maintaining documentation related to their domain.
+This document serves as a high-level reference and does not replace detailed technical guides.
+
+?[32m21:16:51.081?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.z.h.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[32m21:16:51.241?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.z.h.p.HikariPool?[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b3d03b2
+?[32m21:16:51.242?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.z.h.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[32m21:16:51.266?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.266?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: How many paid leave days do employees get per year?
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Employees are entitled to 24 days of paid leave per calendar year.
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: How do I apply for extended medical leave?
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Extended medical leave requires HR approval and submission of a medical certificate.
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: How can I reset my VPN password?
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: VPN passwords can be reset using the internal IT portal or by contacting IT Support.
+?[32m21:16:51.267?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: Is MFA required for internal applications?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Yes, multi-factor authentication is mandatory for accessing internal systems.
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: Who can access production systems?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Only authorized engineering and operations personnel with elevated privileges can access production systems.
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: Where can I find API design standards?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: API design standards are documented in the internal API Guidelines wiki.
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: How do I report a security incident?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Security incidents must be reported to the Information Security team within 24 hours.
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: What should I do if I get an access denied error?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Verify your role and department, and ensure access has been approved.
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: How often are access rights reviewed?
+?[32m21:16:51.268?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Access rights are reviewed periodically as part of regular audits.
+?[32m21:16:51.269?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- FAQ -----
+?[32m21:16:51.269?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Q: Who do I contact for onboarding issues?
+?[32m21:16:51.269?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - A: Contact HR for policy questions and IT Support for system access issues.
+?[32m21:16:51.275?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.275?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.1
+?[32m21:16:51.275?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: Improved authentication performance
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.2
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: Enhanced role-based access control
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.3
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: API Gateway upgrade
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.4
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: Security patch release
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.5
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: Improved logging and monitoring
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.6
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: New deployment pipeline
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Release Note -----
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Version: v2.7
+?[32m21:16:51.276?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Description: Data privacy enhancements
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: Updated Work From Home Policy
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: Revised Work From Home Policy
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: Mandatory MFA Rollout
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: Scheduled Security Maintenance
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: New Data Privacy Guidelines
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - ----- Announcement -----
+?[32m21:16:51.280?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.i.d.DatabaseIngestionService?[0;39m - Title: Access Review Reminder
+?[32m21:16:51.281?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.281?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : PDF
+?[32m21:16:51.281?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 4
+?[32m21:16:51.281?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.281?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=HR_Leave_Policy.pdf, chunkIndex=0, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : NexaCorp – HR Leave Policy
+Last Updated: April 2024
+1. Introduction
+This document defines the official leave policy for employees of NexaCorp. The policy applies to all
+full-time employees and outlines various types of leave, approval workflows, and special cases.
+2. Types of Leave
+NexaCorp provides the following types of leave: Paid Leave (PL), Sick Leave (SL), Casual Leave
+(CL), and Unpaid Leave. Each leave type serves a different purpose and is governed by specific
+rules.
+3. Paid Leave Policy
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=HR_Leave_Policy.pdf, chunkIndex=1, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
+rules.
+3. Paid Leave Policy
+Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
+forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
+lapse automatically.
+4. Sick Leave Policy
+Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
+Leave exceeds two consecutive working days. Extended sick leave may 
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=HR_Leave_Policy.pdf, chunkIndex=2, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : certificate is required if Sick
+Leave exceeds two consecutive working days. Extended sick leave may require HR approval.
+5. Leave Approval Workflow
+All leave requests must be submitted through the internal HR system. Manager approval is
+mandatory for Paid and Unpaid Leave. HR approval is required for extended leave beyond 10
+working days.
+6. Special Leave Cases
+NexaCorp provides maternity leave, paternity leave, and extended medical leave as per applicable
+labor laws and company guidelines.
+7. P
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=HR_Leave_Policy.pdf, chunkIndex=3, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : aternity leave, and extended medical leave as per applicable
+labor laws and company guidelines.
+7. Policy Updates
+This policy may be updated periodically. Employees are advised to refer to official HR
+announcements for the latest updates. In case of discrepancies, the latest policy document takes
+precedence.
+
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : PDF
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 3
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=IT_Access_Control_Policy.pdf, chunkIndex=0, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.282?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : NexaCorp – IT Access Control Policy
+Last Updated: January 2024
+1. Purpose
+This policy defines how access to NexaCorp systems, applications, and infrastructure is granted,
+reviewed, and revoked. The goal is to enforce the principle of least privilege.
+2. Types of Access
+Access may be granted to applications, databases, cloud infrastructure, and internal tools. Each
+access type carries different levels of risk and approval requirements.
+3. Role-Based Access Control
+Access is assigned based on empl
+?[32m21:16:51.283?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.283?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=IT_Access_Control_Policy.pdf, chunkIndex=1, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.283?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : els of risk and approval requirements.
+3. Role-Based Access Control
+Access is assigned based on employee roles such as Engineering, HR, Support, and Operations.
+Elevated privileges are granted only when justified by business needs.
+4. Access Request Process
+Employees must submit access requests through the internal access management system.
+Requests require manager approval and may require security team review.
+5. Periodic Access Reviews
+Access rights are reviewed periodically to ensure they rem
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=IT_Access_Control_Policy.pdf, chunkIndex=2, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : y team review.
+5. Periodic Access Reviews
+Access rights are reviewed periodically to ensure they remain appropriate. Unnecessary access is
+revoked as part of regular audits.
+6. Employee Exit Procedures
+Upon employee termination or role change, all system access must be reviewed and adjusted.
+Access to critical systems must be revoked immediately upon exit.
+
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : PDF
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 3
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Data_Privacy_Guidelines.pdf, chunkIndex=0, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.284?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : NexaCorp – Data Privacy Guidelines
+Last Updated: May 2024
+1. Introduction to Data Privacy
+NexaCorp is committed to protecting the privacy of personal and sensitive data. These guidelines
+define how personal data must be collected, processed, stored, and shared within the organization.
+2. Types of Data
+Data handled by NexaCorp may include personal data, sensitive personal data, and confidential
+business information. Each type of data requires different levels of protection.
+3. Data Collection Pri
+?[32m21:16:51.286?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Data_Privacy_Guidelines.pdf, chunkIndex=1, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : iness information. Each type of data requires different levels of protection.
+3. Data Collection Principles
+Personal data must be collected only for legitimate business purposes and with appropriate
+consent. Data collection must be limited to what is necessary.
+4. Data Storage and Retention
+Personal data must be stored securely and retained only for the duration necessary to fulfill its
+purpose. Retention periods vary by data category.
+5. Data Access Controls
+Access to personal data must be rest
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Data_Privacy_Guidelines.pdf, chunkIndex=2, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : etention periods vary by data category.
+5. Data Access Controls
+Access to personal data must be restricted based on job role and business need. All access must
+be logged and auditable.
+6. Data Breach Handling
+Any suspected data breach must be reported immediately to the Data Protection Officer. Timely
+investigation and notification procedures must be followed.
+
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : PDF
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 3
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Information_Security_Policy.pdf, chunkIndex=0, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : NexaCorp – Information Security Policy
+Last Updated: February 2024
+1. Policy Overview
+This Information Security Policy defines NexaCorp's approach to protecting company data,
+systems, and infrastructure from unauthorized access, misuse, or loss.
+2. Password and Authentication Standards
+All users must use strong passwords with a minimum length of 12 characters. Multi-factor
+authentication (MFA) is mandatory for accessing internal systems.
+3. Device Security
+Company-issued devices must be encrypte
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Information_Security_Policy.pdf, chunkIndex=1, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : mandatory for accessing internal systems.
+3. Device Security
+Company-issued devices must be encrypted and protected with approved security software.
+Personal devices may access company systems only through approved secure channels.
+4. Network Security
+Employees must use the company VPN when accessing internal resources remotely. Use of public
+Wi-Fi without VPN is strictly prohibited.
+5. Data Handling and Classification
+Data is classified as Public, Internal, Confidential, or Restricted. Handling
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Information_Security_Policy.pdf, chunkIndex=2, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ing and Classification
+Data is classified as Public, Internal, Confidential, or Restricted. Handling and sharing of data must
+follow classification-specific guidelines.
+6. Incident Reporting
+Any suspected security incident must be reported to the Information Security team within 24 hours
+using the official incident reporting channel.
+7. Policy Violations
+Violations of this policy may result in disciplinary action, including termination and potential legal
+consequences depending on severity.
+
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : PDF
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 3
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Employee_Onboarding_Guide.pdf, chunkIndex=0, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : NexaCorp – Employee Onboarding Guide
+Last Updated: March 2024
+1. Welcome to NexaCorp
+Welcome to NexaCorp. This guide is designed to help new employees understand the company,
+complete onboarding tasks, and get productive quickly.
+2. First Week Checklist
+During your first week, complete the following tasks: submit HR documents, collect your employee
+ID card, and attend mandatory orientation sessions.
+3. IT Setup
+New employees will receive company laptops pre-configured with standard tools. Email 
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Employee_Onboarding_Guide.pdf, chunkIndex=1, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.288?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : s.
+3. IT Setup
+New employees will receive company laptops pre-configured with standard tools. Email accounts,
+VPN access, and internal tool access will be provisioned by IT.
+4. Access Requests
+If additional system access is required, employees must submit an access request through the
+internal portal. Manager approval is mandatory for elevated access.
+5. Security Awareness
+Employees are required to follow company security policies including strong password usage,
+device security practices, and r
+?[32m21:16:51.289?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.289?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {filename=Employee_Onboarding_Guide.pdf, chunkIndex=2, chunkSize=500, chunkOverlap=100, sourceType=PDF, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
+?[32m21:16:51.289?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : o follow company security policies including strong password usage,
+device security practices, and reporting suspicious activities.
+6. Support Contacts
+For HR-related questions, contact hr@nexacorp.internal. For IT support, reach out to
+it-support@nexacorp.internal.
+
+?[32m21:16:51.289?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 7
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.290?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Overview
+NexaCorp uses a centralized authentication system to manage user identity and access
+across all internal and customer-facing applications.
+?[32m21:16:51.291?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Authentication Mechanism
+- Users authenticate using company-issued credentials
+- Single Sign-On (SSO) is enabled across internal systems
+- Multi-Factor Authentication (MFA) is mandatory for sensitive operations
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Login Flow
+1. User accesses an internal application
+2. Request is redirected to the Authentication Service
+3. Credentials are validated
+4. MFA challenge is performed if required
+5. Access token is issued upon successful authentication
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Token Management
+- Access tokens are short-lived
+- Refresh tokens are securely stored
+- Tokens include user role and department metadata
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Common Issues
+- Expired tokens causing access failures
+- MFA challenges not completed
+- Clock skew between services
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 6
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=6, chunkType=WIKI_SECTION, fileName=authentication-flow.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Related Policies
+Refer to the Information Security Policy for password and MFA requirements.
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 8
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # API Guidelines at NexaCorp
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Purpose
+This document defines the standard guidelines for designing, building, and maintaining APIs at NexaCorp.
+All teams are expected to follow these guidelines to ensure consistency, security, and reliability.
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## API Design Principles
+- APIs should be RESTful and resource-oriented
+- Use clear and consistent naming conventions
+- Avoid breaking changes whenever possible
+- Version APIs explicitly when changes are required
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Authentication &amp; Authorization
+- All APIs must be secured using the centralized authentication system
+- Authorization checks must be enforced at the service layer
+- Sensitive endpoints require elevated privileges
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Error Handling
+- Use standard HTTP status codes
+- Error responses must include meaningful error messages
+- Avoid exposing internal implementation details in errors
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Logging &amp; Monitoring
+- All APIs must log incoming requests and responses (excluding sensitive data)
+- Errors and latency metrics must be monitored
+- Critical APIs should have alerts configured
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 6
+?[32m21:16:51.292?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=6, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Rate Limiting
+- Public-facing APIs must enforce rate limits
+- Internal APIs may apply rate limits based on usage patterns
+- Abuse or excessive usage must be flagged automatically
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 7
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=7, chunkType=WIKI_SECTION, fileName=api-guidelines.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Related Documentation
+Refer to the Authentication Flow and Authorization Model documents for security-related guidelines.
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 10
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # Troubleshooting Common Issues at NexaCorp
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Overview
+This document lists common issues encountered by employees while using NexaCorp's internal systems,
+along with recommended troubleshooting steps.
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Login &amp; Access Issues
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ### Unable to Log In
+- Verify username and password
+- Ensure MFA device is available
+- Check if account is locked due to failed attempts
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ### Access Denied Errors
+- Confirm assigned role and department
+- Verify that access has been approved
+- Check if permissions were recently updated
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## VPN &amp; Network Issues
+- Ensure VPN client is installed and running
+- Reconnect VPN before accessing internal resources
+- Avoid public Wi-Fi without VPN
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 6
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=6, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Application Errors
+- Clear browser cache and retry
+- Check system status page for outages
+- Report persistent errors to IT Support
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 7
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=7, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Data Access Issues
+- Some data may be restricted based on role
+- Recently updated policies may not be immediately visible
+- Contact data owners for clarification
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 8
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=8, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Getting Help
+- IT Support: it-support@nexacorp.internal
+- HR Support: hr@nexacorp.internal
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 9
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=9, chunkType=WIKI_SECTION, fileName=troubleshooting-common-issues.md}
+?[32m21:16:51.293?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Related Documents
+Refer to Authentication Flow, Authorization Model, and Information Security Policy for detailed guidance.
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 8
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # Deployment Architecture at NexaCorp
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Overview
+NexaCorp deploys its applications using a cloud-native architecture designed for scalability,
+resilience, and security. All core services are containerized and managed centrally.
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Infrastructure Model
+- Applications run as Docker containers
+- Containers are orchestrated using Kubernetes
+- Separate environments exist for Dev, QA, and Production
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Service Deployment
+Each service is deployed independently and can be scaled based on demand.
+Stateless services are preferred wherever possible to simplify scaling.
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Configuration Management
+- Configuration is externalized using environment variables and config files
+- Secrets are managed using a secure secrets manager
+- No sensitive data is stored directly in application code
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Networking &amp; Security
+- Services communicate over internal networks
+- External access is routed through an API Gateway
+- Network policies restrict unauthorized service communication
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 6
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=6, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Observability
+- Centralized logging is enabled for all services
+- Metrics are collected for latency, error rates, and throughput
+- Alerts are configured for critical system failures
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 7
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=7, chunkType=WIKI_SECTION, fileName=deployment-architecture.md}
+?[32m21:16:51.294?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Related Documentation
+Refer to the API Guidelines and Information Security Policy for additional operational standards.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 8
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # Authorization Model at NexaCorp
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Overview
+Authorization at NexaCorp determines what authenticated users are allowed to access
+within internal systems. Authorization decisions are based on roles, departments,
+and business context.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Role-Based Access Control (RBAC)
+NexaCorp uses RBAC as the primary authorization mechanism. Common roles include:
+- Engineering
+- HR
+- Support
+- Operations
+- Security
+
+Each role has predefined access permissions to applications, data, and tools.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Department-Based Constraints
+In addition to roles, access may be constrained by department. For example:
+- HR users can access employee records and HR policies
+- Engineering users can access technical documentation and source repositories
+- Support users can access customer-facing knowledge bases
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Privileged Access
+Certain operations require elevated privileges:
+- Access to production systems
+- Viewing confidential security reports
+- Managing user access and roles
+
+Privileged access requires additional approval and is audited regularly.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Authorization Tokens
+Authorization information is embedded in access tokens issued during authentication.
+Tokens typically include:
+- User role
+- Department
+- Access scopes
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 6
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=6, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Common Authorization Issues
+- Access denied due to missing role
+- Stale permissions after role change
+- Insufficient privileges for sensitive operations
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 7
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=7, chunkType=WIKI_SECTION, fileName=authorization-model.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Related Documents
+Refer to the IT Access Control Policy for detailed access request and review processes.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : WIKI
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 6
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=0, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : # NexaCorp Platform Overview
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 1
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=1, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Introduction
+NexaCorp is a B2B SaaS company that provides cloud-based workflow and analytics solutions
+for enterprise customers. The platform is designed to be modular, scalable, and secure.
+?[32m21:16:51.295?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 2
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=2, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## High-Level Architecture
+The NexaCorp platform consists of the following major components:
+- API Gateway
+- Authentication &amp; Authorization Service
+- Core Business Services
+- Data Processing Pipelines
+- Reporting &amp; Analytics Engine
+
+All services are deployed as containerized applications and communicate over secure APIs.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 3
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=3, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Core Domains
+The platform is divided into multiple business domains:
+- User Management
+- Workflow Orchestration
+- Analytics &amp; Reporting
+- Integrations
+
+Each domain owns its data and exposes APIs to other services.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 4
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=4, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Technology Stack
+- Backend: Java, Spring Boot
+- Databases: PostgreSQL, Redis
+- Messaging: Kafka
+- Cloud: Kubernetes-based infrastructure
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 5
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {chunkIndex=5, chunkType=WIKI_SECTION, fileName=platform-overview.md}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : ## Documentation &amp; Ownership
+Each team is responsible for maintaining documentation related to their domain.
+This document serves as a high-level reference and does not replace detailed technical guides.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=1, department=HR, table=faqs}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: How many paid leave days do employees get per year?
+Answer: Employees are entitled to 24 days of paid leave per calendar year.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=2, department=HR, table=faqs}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: How do I apply for extended medical leave?
+Answer: Extended medical leave requires HR approval and submission of a medical certificate.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=3, department=IT, table=faqs}
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: How can I reset my VPN password?
+Answer: VPN passwords can be reset using the internal IT portal or by contacting IT Support.
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.297?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=4, department=IT, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: Is MFA required for internal applications?
+Answer: Yes, multi-factor authentication is mandatory for accessing internal systems.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=RESTRICTED, id=5, department=Engineering, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: Who can access production systems?
+Answer: Only authorized engineering and operations personnel with elevated privileges can access production systems.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=6, department=Engineering, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: Where can I find API design standards?
+Answer: API design standards are documented in the internal API Guidelines wiki.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=7, department=Security, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: How do I report a security incident?
+Answer: Security incidents must be reported to the Information Security team within 24 hours.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=8, department=IT, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: What should I do if I get an access denied error?
+Answer: Verify your role and department, and ensure access has been approved.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=9, department=Security, table=faqs}
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: How often are access rights reviewed?
+Answer: Access rights are reviewed periodically as part of regular audits.
+?[32m21:16:51.298?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.299?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {visibility=INTERNAL, id=10, department=HR, table=faqs}
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Question: Who do I contact for onboarding issues?
+Answer: Contact HR for policy questions and IT Support for system access issues.
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-01-15, id=1, version=v2.1, table=release_notes}
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.1
+Summary: Improved authentication performance
+Details: Optimized token validation and reduced login latency.
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-02-10, id=2, version=v2.2, table=release_notes}
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.2
+Summary: Enhanced role-based access control
+Details: Introduced finer-grained permissions for internal tools.
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-03-05, id=3, version=v2.3, table=release_notes}
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.3
+Summary: API Gateway upgrade
+Details: Upgraded API Gateway to support higher throughput and better monitoring.
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-03-25, id=4, version=v2.4, table=release_notes}
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.4
+Summary: Security patch release
+Details: Applied critical security patches across all services.
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.300?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-04-12, id=5, version=v2.5, table=release_notes}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.5
+Summary: Improved logging and monitoring
+Details: Enhanced centralized logging and alerting capabilities.
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-05-02, id=6, version=v2.6, table=release_notes}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.6
+Summary: New deployment pipeline
+Details: Rolled out automated CI/CD pipelines for faster deployments.
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {releaseDate=2024-05-20, id=7, version=v2.7, table=release_notes}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Version: v2.7
+Summary: Data privacy enhancements
+Details: Updated data handling mechanisms to align with privacy guidelines.
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2023-01-01, effectiveTo=, id=1, category=HR, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: Updated Work From Home Policy
+The work from home policy has been updated. Employees are now required to work from the office at least two days per week.
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2024-04-01, effectiveTo=, id=2, category=HR, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: Revised Work From Home Policy
+Effective April 2024, employees may work remotely up to three days per week, subject to manager approval.
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2024-03-01, effectiveTo=, id=3, category=IT, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.301?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: Mandatory MFA Rollout
+Multi-factor authentication will be mandatory for all internal applications starting March 2024.
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2024-04-10, effectiveTo=, id=4, category=Security, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: Scheduled Security Maintenance
+Security maintenance is scheduled for April 10th. Some services may be unavailable.
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2024-05-01, effectiveTo=, id=5, category=Legal, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: New Data Privacy Guidelines
+Updated data privacy guidelines have been published. All employees must review the new policies.
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - ====================================
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - SOURCE : DB
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - CHUNKS : 1
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Chunk index : 0
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Metadata    : {effectiveFrom=2024-02-01, effectiveTo=, id=6, category=Security, sourceType=EMAIL, table=announcements}
+?[32m21:16:51.302?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.c.ChunkingOrchestratorTest?[0;39m - Content     : Subject: Access Review Reminder
+Quarterly access reviews will be conducted. Managers must review team access rights.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Jul 31, 2026, 9:16:51 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -42,6 +42,9 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     runtimeOnly 'org.postgresql:postgresql'
+
+    implementation 'org.springframework.ai:spring-ai-starter-vector-store-redis'
+
 }
 
 dependencyManagement {
