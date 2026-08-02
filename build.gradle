@@ -45,6 +45,7 @@ dependencies {
 
     implementation 'org.springframework.ai:spring-ai-starter-vector-store-redis'
 
+    implementation 'org.springframework.ai:spring-ai-starter-model-google-genai-embedding'
 }
 
 dependencyManagement {
