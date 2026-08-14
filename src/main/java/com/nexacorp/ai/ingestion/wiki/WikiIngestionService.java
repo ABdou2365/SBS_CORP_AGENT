@@ -38,7 +38,7 @@ public class WikiIngestionService {
 
         String content = Files.readString(pdfFile.toPath());
 
-        log.info("----- Wifi Content ({}) -----", pdfFile.getName());
+        log.info("----- WiKi Content ({}) -----", pdfFile.getName());
         log.info(content);
         return new IngestedDocument(
                 "WIKI",
