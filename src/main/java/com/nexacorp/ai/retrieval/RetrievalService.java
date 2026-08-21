@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 public class RetrievalService {
 
     private final VectorStore vectorStore;
+    private final ChunkRankingComparator rankingComparator = new ChunkRankingComparator();
 
     public RetrievalService(@Qualifier("customVectorStore") VectorStore vectorStore) {
         this.vectorStore = vectorStore;
@@ -39,6 +40,7 @@ public class RetrievalService {
         List<Chunk> chunks = documents.stream()
                 .filter(this::isAllowedByMetadata)
                 .map(this::toChunk)
+                .sorted(rankingComparator)
                 .collect(Collectors.toList());
 
         return new RetrievalResult(chunks);
