@@ -17,7 +17,7 @@ public class RetrievalServiceTest {
 
     @Test
     void retrieve_test() {
-        RetrievalResult result = retrievalService.retrieve("What is the leave carry forward policy?");
+        RetrievalResult result = retrievalService.retrieve("Explain the nexacorp authentication flow");
 
         log.info("Retrieval result - chunks found: {}" , result.getChunks().size());
         for(Chunk chunk : result.getChunks()) {

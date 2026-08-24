@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.274s</div>
+<div class="counter">1.546s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">retrieve_test()</td>
-<td class="success">1.274s</td>
+<td class="success">1.546s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,10 +87,10 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>02:00:13.395 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.retrieval.RetrievalServiceTest]: RetrievalServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:00:13.472 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.retrieval.RetrievalServiceTest
-02:00:13.518 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.retrieval.RetrievalServiceTest]: RetrievalServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:00:13.519 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.retrieval.RetrievalServiceTest
+<pre>21:11:51.509 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.retrieval.RetrievalServiceTest]: RetrievalServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:11:51.578 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.retrieval.RetrievalServiceTest
+21:11:51.631 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nexacorp.ai.retrieval.RetrievalServiceTest]: RetrievalServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:11:51.632 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nexacorp.ai.NexacorpAiBackendApplication for test class com.nexacorp.ai.retrieval.RetrievalServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -101,7 +101,7 @@
 
  :: Spring Boot ::       (v4.0.5-SNAPSHOT)
 
-?[32m02:00:13.667?[0;39m ?[34mWARN ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer?[0;39m - 
+?[32m21:11:51.793?[0;39m ?[34mWARN ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer?[0;39m - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -110,66 +110,40 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-?[32m02:00:13.672?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Starting RetrievalServiceTest using Java 17.0.19 with PID 77130 (started by abdellah in /Users/abdellah/Downloads/[ WebToolTip.com ] Udemy - Spring AI + RAG - Build Production-Grade AI with Your Data/~Get Your Files Here !/1 - Project Setup &amp; Spring AI Sanity Check/Spring-AI-RAG-course-module1.3-basic-chat)
-?[32m02:00:13.673?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - No active profile set, falling back to 1 default profile: &quot;default&quot;
-?[32m02:00:14.068?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
-?[32m02:00:14.070?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-?[32m02:00:14.088?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-?[32m02:00:15.152?[0;39m ?[34mERROR?[0;39m ?[31m[Test worker]?[0;39m ?[33mi.n.r.d.DnsServerAddressStreamProviders?[0;39m - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-?[32m02:00:15.408?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Started RetrievalServiceTest in 1.856 seconds (process running for 2.593)
-?[32m02:00:15.819?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalService?[0;39m - Retrieval requested for query: What is the leave carry forward policy?
-?[32m02:00:16.679?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalService?[0;39m - Vector store returned 5 documents
-?[32m02:00:16.679?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Retrieval result - chunks found: 5
-?[32m02:00:16.679?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {chunkSize=500, chunkOverlap=100, distance=0.13995331525802612, sourceType=PDF, vector_score=0.279906630516, source=PDF, chunkIndex=1, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
-?[32m02:00:16.679?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
-rules.
-3. Paid Leave Policy
-Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
-forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
-lapse automatically.
-4. Sick Leave Policy
-Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
-Leave exceeds two consecutive working days. Extended sick leave may 
-?[32m02:00:16.679?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {chunkSize=500, chunkOverlap=100, distance=0.13995331525802612, sourceType=PDF, vector_score=0.279906630516, source=PDF, chunkIndex=1, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
-rules.
-3. Paid Leave Policy
-Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
-forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
-lapse automatically.
-4. Sick Leave Policy
-Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
-Leave exceeds two consecutive working days. Extended sick leave may 
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {chunkSize=500, chunkOverlap=100, distance=0.13995331525802612, sourceType=PDF, vector_score=0.279906630516, source=PDF, chunkIndex=1, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
-rules.
-3. Paid Leave Policy
-Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
-forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
-lapse automatically.
-4. Sick Leave Policy
-Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
-Leave exceeds two consecutive working days. Extended sick leave may 
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {chunkSize=500, chunkOverlap=100, distance=0.13995331525802612, sourceType=PDF, vector_score=0.279906630516, source=PDF, chunkIndex=1, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
-rules.
-3. Paid Leave Policy
-Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
-forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
-lapse automatically.
-4. Sick Leave Policy
-Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
-Leave exceeds two consecutive working days. Extended sick leave may 
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {chunkSize=500, chunkOverlap=100, distance=0.13995331525802612, sourceType=PDF, vector_score=0.279906630516, source=PDF, chunkIndex=1, chunkStrategy=PDF_PRAGMATIC_FIXED_SIZE}
-?[32m02:00:16.680?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : . Each leave type serves a different purpose and is governed by specific
-rules.
-3. Paid Leave Policy
-Employees are entitled to 24 days of Paid Leave per calendar year. Paid Leave can be carried
-forward up to a maximum of 10 days into the next year. Unused Paid Leave beyond this limit will
-lapse automatically.
-4. Sick Leave Policy
-Employees are entitled to 12 days of Sick Leave per year. A medical certificate is required if Sick
-Leave exceeds two consecutive working days. Extended sick leave may 
+?[32m21:11:51.798?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Starting RetrievalServiceTest using Java 17.0.19 with PID 54721 (started by abdellah in /Users/abdellah/Downloads/[ WebToolTip.com ] Udemy - Spring AI + RAG - Build Production-Grade AI with Your Data/~Get Your Files Here !/1 - Project Setup &amp; Spring AI Sanity Check/Spring-AI-RAG-course-module1.3-basic-chat)
+?[32m21:11:51.799?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - No active profile set, falling back to 1 default profile: &quot;default&quot;
+?[32m21:11:52.211?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+?[32m21:11:52.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+?[32m21:11:52.232?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mo.s.d.r.c.RepositoryConfigurationDelegate?[0;39m - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+?[32m21:11:53.437?[0;39m ?[34mERROR?[0;39m ?[31m[Test worker]?[0;39m ?[33mi.n.r.d.DnsServerAddressStreamProviders?[0;39m - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+?[32m21:11:53.675?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Started RetrievalServiceTest in 2.006 seconds (process running for 3.1)
+?[32m21:11:54.182?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalService?[0;39m - Retrieval requested for query: Explain the nexacorp authentication flow
+?[32m21:11:55.212?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalService?[0;39m - Vector store returned 10 documents
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Retrieval result - chunks found: 10
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.10371196269989014, vector_score=0.207423985004, source=WIKI, chunkIndex=1, chunkType=WIKI_SECTION}
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : ## Overview
+NexaCorp uses a centralized authentication system to manage user identity and access
+across all internal and customer-facing applications.
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.10371196269989014, vector_score=0.207423985004, source=WIKI, chunkIndex=1, chunkType=WIKI_SECTION}
+?[32m21:11:55.213?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : ## Overview
+NexaCorp uses a centralized authentication system to manage user identity and access
+across all internal and customer-facing applications.
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Metadata    : {fileName=authentication-flow.md, distance=0.06328153610229492, vector_score=0.126563072205, source=WIKI, chunkIndex=0, chunkType=WIKI_SECTION}
+?[32m21:11:55.214?[0;39m ?[34mINFO ?[0;39m ?[31m[Test worker]?[0;39m ?[33mc.n.a.r.RetrievalServiceTest?[0;39m - Content     : # Authentication Flow at NexaCorp
 </pre>
 </span>
 </div>
@@ -181,7 +155,7 @@ Leave exceeds two consecutive working days. Extended sick leave may
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at Aug 14, 2026, 2:00:17 AM</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Aug 24, 2026, 9:11:55 PM</p>
 </div>
 </div>
 </body>

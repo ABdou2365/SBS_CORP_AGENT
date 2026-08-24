@@ -13,6 +13,7 @@ public class ChunkRankingComparator implements Comparator<Chunk>  {
     public int compare(Chunk a, Chunk b) {
 
         // 1. source priority
+        
         int sourceCompare = Integer.compare(sourcePriority(a), sourcePriority(b));
         if (sourceCompare != 0) {
             return sourceCompare;
