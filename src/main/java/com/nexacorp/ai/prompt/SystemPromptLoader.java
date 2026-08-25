@@ -12,8 +12,12 @@ public class SystemPromptLoader {
 
     public SystemInstructions load() {
         try {
+            // Represents the prompt file on the application's classpath; it is not the
+            // prompt text itself.
             ClassPathResource resource = new ClassPathResource(SYSTEM_PROMPT_PATH);
 
+            // Read the file's raw bytes and decode them as UTF-8 to obtain the actual
+            // prompt text required by SystemInstructions.
             String prompt = new String(
                     resource.getInputStream().readAllBytes(),
                     StandardCharsets.UTF_8
