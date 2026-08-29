@@ -46,6 +46,12 @@ dependencies {
     implementation 'org.springframework.ai:spring-ai-starter-vector-store-redis'
 
     implementation 'org.springframework.ai:spring-ai-starter-model-google-genai-embedding'
+
+    compileOnly("org.projectlombok:lombok:1.18.46")
+    annotationProcessor("org.projectlombok:lombok:1.18.46")
+
+    testCompileOnly("org.projectlombok:lombok:1.18.46")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.46")
 }
 
 dependencyManagement {
