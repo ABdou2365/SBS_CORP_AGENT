@@ -14,7 +14,7 @@ public class ContextBuilder {
             contextBuilder.append(chunk.getContent());
             contextBuilder.append("\n\n");
         }
-        return new PromptContext(contextBuilder.toString());
+        return new PromptContext(contextBuilder.toString().trim());
     }
 
 }
