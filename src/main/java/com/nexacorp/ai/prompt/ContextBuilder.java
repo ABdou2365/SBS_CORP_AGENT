@@ -11,6 +11,12 @@ public class ContextBuilder {
         int index = 1;
         for (var chunk : retrievalResult.getChunks()) {
             contextBuilder.append("Index : ").append(index++).append("\n");
+            for (var metadataEntry : chunk.getMetadata().entrySet()) {
+                contextBuilder.append(metadataEntry.getKey())
+                        .append(" : ")
+                        .append(metadataEntry.getValue())
+                        .append("\n");
+            }
             contextBuilder.append(chunk.getContent());
             contextBuilder.append("\n\n");
         }
