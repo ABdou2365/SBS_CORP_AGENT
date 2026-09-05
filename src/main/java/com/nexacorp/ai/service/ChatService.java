@@ -21,9 +21,9 @@ public class ChatService {
         String userMessage = request.getMessage();
         ChatPrompt chatPrompt = promptOrchestrator.build(userMessage);
 
-        String llmInput = userMessage + "\n\n" +
-                chatPrompt.getContext().getPromptText() +
-                "\n\n" + chatPrompt.getGroundingRule();
+        String llmInput = chatPrompt.getContext().getPromptText() +
+                "\n\n" + chatPrompt.getGroundingRule()
+                + "\n\n" + userMessage;
 
         String aiResponse = chatClient.prompt()
                 .user(llmInput)
