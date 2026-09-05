@@ -25,18 +25,15 @@ public class ContextBuilder {
         Map<String, Object> metadata = chunk.getMetadata();
         String source = metadata.get("source").toString();
         switch (source) {
-            case "DB":
-                String table = metadata.get("table").toString();
-                String id = metadata.get("id").toString();
-                contextBuilder.append("Source : ").append("[DB:").append(table).append("#").append(id).append("]\n");
-                break;
             case "PDF":
-                String fileName = metadata.get("fileName").toString();
-                contextBuilder.append("Source : ").append("[PDF:").append(fileName).append("]\n");
-                break;
             case "WIKI":
-                String wikiFileName = metadata.get("fileName").toString();
-                contextBuilder.append("Source : ").append("[WIKI:").append(wikiFileName).append("]\n");
+                contextBuilder.append("Source : ").append("[").append(source).append(":")
+                        .append(metadata.get("fileName")).append("]\n");
+                break;
+            case "DB":
+                contextBuilder.append("Source : ").append("[").append(source).append(":")
+                        .append(metadata.get("table"))
+                        .append("#").append(metadata.get("id")).append("]\n");
                 break;
             default:
                 contextBuilder.append("Source : ").append(source).append("\n");
