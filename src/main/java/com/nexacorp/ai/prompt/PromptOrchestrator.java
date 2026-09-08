@@ -5,7 +5,6 @@ import com.nexacorp.ai.prompt.model.PromptContext;
 import com.nexacorp.ai.prompt.model.SystemInstructions;
 import com.nexacorp.ai.retrieval.RetrievalService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
