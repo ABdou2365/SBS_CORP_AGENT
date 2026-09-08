@@ -5,6 +5,8 @@ import com.nexacorp.ai.ingestion.db.DatabaseIngestionService;
 import com.nexacorp.ai.ingestion.pdf.PdfIngestionService;
 import com.nexacorp.ai.ingestion.wiki.WikiIngestionService;
 import com.nexacorp.ai.lifecycle.model.KnowledgeRequest;
+import com.nexacorp.ai.vectorstore.ChunkVectorStoreService;
+import org.springframework.ai.vectorstore.redis.RedisVectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,48 +16,48 @@ import static com.nexacorp.ai.lifecycle.model.SourceType.*;
 public class KnowledgeLifecycleService {
 
 
-    private final PdfIngestionService pdfIngestionService;
-    private final WikiIngestionService wikiIngestionService;
-    private final DatabaseIngestionService databaseIngestionService;
+    private final ChunkVectorStoreService vectorStore;
 
-    public KnowledgeLifecycleService(PdfIngestionService pdfIngestionService, WikiIngestionService wikiIngestionService, DatabaseIngestionService databaseIngestionService) {
-        this.pdfIngestionService = pdfIngestionService;
-        this.wikiIngestionService = wikiIngestionService;
-        this.databaseIngestionService = databaseIngestionService;
+    public KnowledgeLifecycleService(ChunkVectorStoreService vectorStore) {
+        this.vectorStore = vectorStore;
     }
 
     public void ingest(KnowledgeRequest knowledgeRequest) throws Exception {
         // Implement the ingestion logic based on the source type and file name
         // For example, you can call different services based on the source type
-        switch (knowledgeRequest.getSourceType()) {
-            case PDF:
-                // Call PDF ingestion service
-                pdfIngestionService.ingestPdfs();
-                break;
-            case WIKI:
-                // Call WIKI ingestion service
-                wikiIngestionService.ingestWikis();
-                break;
-            case DATABASE:
-                // Call Database ingestion service
-                databaseIngestionService.ingestDatabaseContent();
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported source type: " + knowledgeRequest.getSourceType());
-        }
+
+
+        String identity = KnowledgeIdentity.from(knowledgeRequest);
+
+//        switch (knowledgeRequest.getSourceType()) {
+//            case PDF:
+//                // Call PDF ingestion service
+//                String identity = KnowledgeIdentity.from(knowledgeRequest);
+//
+//                // pdfIngestionService.ingestPdfs();
+//                break;
+//            case WIKI:
+//                // Call WIKI ingestion service
+//
+//                String identity = KnowledgeIdentity.from(knowledgeRequest);
+//                // wikiIngestionService.ingestWikis();
+//                break;
+//            case DATABASE:
+//                // Call Database ingestion service
+//                // databaseIngestionService.ingestDatabaseContent();
+//                break;
+//            default:
+//                throw new IllegalArgumentException("Unsupported source type: " + knowledgeRequest.getSourceType());
+//        }
     }
 
     public void delete(KnowledgeRequest knowledgeRequest) {
-        switch (knowledgeRequest.getSourceType()) {
-            case PDF:
-                break;
-            case WIKI:
-                break;
-            case DATABASE:
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported source type: " + knowledgeRequest.getSourceType());
-        }
+        String identity = KnowledgeIdentity.from(knowledgeRequest);
+        vectorStore.deleteByIdentity(identity);
+    }
+
+    public void deleteAll() {
+        vectorStore.deleteAll();
     }
 
 }

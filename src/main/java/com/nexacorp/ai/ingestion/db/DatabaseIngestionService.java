@@ -48,7 +48,8 @@ public class DatabaseIngestionService {
                     Map.of("table", "faqs",
                             "id", row.get("id"),
                             "department", row.get("department"),
-                            "visibility", row.get("visibility")
+                            "visibility", row.get("visibility"),
+                            "identity","DB#faqs"
                     )
             ));
         }
@@ -78,7 +79,8 @@ public class DatabaseIngestionService {
                     Map.of("table", "release_notes",
                             "id", row.get("id"),
                             "version", row.get("version"),
-                            "releaseDate", row.get("release_date")
+                            "releaseDate", row.get("release_date"),
+                            "identity", "DB#release_notes"
                     )
             ));
         }
@@ -106,7 +108,8 @@ public class DatabaseIngestionService {
                             "category", row.get("category"),
                             "effectiveFrom", row.get("effective_from"),
                             "effectiveTo", row.get("effectiveTo") != null ? row.get("effectiveTo") : "",
-                            "sourceType", row.get("source_type")
+                            "sourceType", row.get("source_type"),
+                            "identity", "DB#announcements"
                     )
             ));
         }
