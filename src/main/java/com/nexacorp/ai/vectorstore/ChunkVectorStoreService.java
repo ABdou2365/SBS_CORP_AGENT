@@ -6,6 +6,7 @@ import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;
 import org.springframework.ai.vectorstore.filter.FilterExpressionBuilder;
+import org.springframework.ai.vectorstore.redis.RedisVectorStore;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
@@ -17,9 +18,9 @@ import java.util.stream.Collectors;
 @Service
 public class ChunkVectorStoreService {
 
-    private final VectorStore vectorStore;
+    private final RedisVectorStore vectorStore;
 
-    public ChunkVectorStoreService(@Qualifier("customVectorStore") VectorStore vectorStore) {
+    public ChunkVectorStoreService(@Qualifier("customVectorStore") RedisVectorStore vectorStore) {
         this.vectorStore = vectorStore;
     }
 
@@ -58,15 +59,10 @@ public class ChunkVectorStoreService {
     public void deleteAll() {
         FilterExpressionBuilder filterBuilder = new FilterExpressionBuilder();
 
-        Filter.Expression filter = filterBuilder.gte("chunkIndex", -1).build();
+        Filter.Expression filter =
+                filterBuilder.gte("chunkIndex", -1).build();
 
-        SearchRequest searchRequest = SearchRequest.builder()
-                .query(" ")
-                .filterExpression(filter)
-                .topK(10)
-                .build();
-
-        while (!vectorStore.similaritySearch(searchRequest).isEmpty()) {
+        while (vectorStore.count(filter) > 0) {
             vectorStore.delete(filter);
         }
     }

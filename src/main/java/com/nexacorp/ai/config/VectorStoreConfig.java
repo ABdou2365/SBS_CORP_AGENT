@@ -1,7 +1,6 @@
 package com.nexacorp.ai.config;
 
 import org.springframework.ai.embedding.EmbeddingModel;
-import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.redis.RedisVectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +16,7 @@ class VectorStoreConfig {
     private Integer redisPort;
 
     @Bean(name = "customVectorStore")
-    public VectorStore vectorStore(JedisPooled jedisPooled, EmbeddingModel embeddingModel) {
+    public RedisVectorStore vectorStore(JedisPooled jedisPooled, EmbeddingModel embeddingModel) {
 
         return RedisVectorStore.builder(jedisPooled, embeddingModel)
                 .indexName("nexacorp_index")

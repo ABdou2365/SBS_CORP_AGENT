@@ -43,7 +43,10 @@ public class WikiIngestionService {
         return new IngestedDocument(
                 "WIKI",
                 content,
-                Map.of("fileName", pdfFile.getName())
+                Map.of("fileName", pdfFile.getName(),
+                        "identity", "WIKI#" + pdfFile.getName()
+
+                )
         );
         }
 }

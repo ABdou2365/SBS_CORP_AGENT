@@ -44,7 +44,11 @@ public class PdfIngestionService {
             return new IngestedDocument(
                     "PDF",
                     text,
-                    Map.of("fileName",pdfFile.getName()));
+                    Map.of("fileName",pdfFile.getName(),
+                            "identity","PDF#" + pdfFile.getName()
+
+                    )
+            );
         }
     }
 }
