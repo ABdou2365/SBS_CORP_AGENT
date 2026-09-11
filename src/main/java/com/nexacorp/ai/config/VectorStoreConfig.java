@@ -22,8 +22,8 @@ class VectorStoreConfig {
                 .indexName("nexacorp_index")
                 .initializeSchema(true)
                 .metadataFields(
-                        RedisVectorStore.MetadataField.text("identity"),
-                        RedisVectorStore.MetadataField.text("source"),
+                        RedisVectorStore.MetadataField.tag("identity"),
+                        RedisVectorStore.MetadataField.tag("source"),
                         RedisVectorStore.MetadataField.numeric("chunkIndex"),
                         // PDF
                         RedisVectorStore.MetadataField.text("fileName"),

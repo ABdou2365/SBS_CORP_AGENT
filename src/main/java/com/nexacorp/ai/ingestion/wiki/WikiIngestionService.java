@@ -33,6 +33,15 @@ public class WikiIngestionService {
         return docs;
     }
 
+    public IngestedDocument ingest(String fileName) throws IOException {
+        File wikiFile = new File(PDF_DIRECTORY, fileName);
+        if (!wikiFile.exists()) {
+            throw new IOException("Wiki file does not exist: " + wikiFile.getAbsolutePath());
+        }
+        return ingestSingleWiki(wikiFile);
+    }
+
+
     private IngestedDocument ingestSingleWiki(File pdfFile) throws IOException {
         log.info("Ingesting Wiki: {}", pdfFile.getName());
 

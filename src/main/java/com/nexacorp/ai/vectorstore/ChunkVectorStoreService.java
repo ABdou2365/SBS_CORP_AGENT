@@ -1,17 +1,21 @@
 package com.nexacorp.ai.vectorstore;
 
 import com.nexacorp.ai.chunking.model.Chunk;
+import redis.clients.jedis.JedisPooled;
 import org.springframework.ai.document.Document;
-import org.springframework.ai.vectorstore.SearchRequest;
-import org.springframework.ai.vectorstore.VectorStore;
-import org.springframework.ai.vectorstore.filter.Filter;
-import org.springframework.ai.vectorstore.filter.FilterExpressionBuilder;
+
 import org.springframework.ai.vectorstore.redis.RedisVectorStore;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.search.Query;
+import redis.clients.jedis.search.SearchResult;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.ai.vectorstore.filter.Filter;
+import org.springframework.ai.vectorstore.filter.FilterExpressionBuilder;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -19,9 +23,13 @@ import java.util.stream.Collectors;
 public class ChunkVectorStoreService {
 
     private final RedisVectorStore vectorStore;
+    private final JedisPooled jedisPooled;
 
-    public ChunkVectorStoreService(@Qualifier("customVectorStore") RedisVectorStore vectorStore) {
+
+    public ChunkVectorStoreService(@Qualifier("customVectorStore") RedisVectorStore vectorStore,
+                                   JedisPooled jedisPooled) {
         this.vectorStore = vectorStore;
+        this.jedisPooled = jedisPooled;
     }
 
     public void store(List<Chunk> chunks) {
@@ -75,11 +83,46 @@ public class ChunkVectorStoreService {
      *
      * @param identity the identity of the chunks to delete
      */
+    /**
+     * Deletes all chunks associated with the specified identity.
+     */
     public void deleteByIdentity(String identity) {
-        FilterExpressionBuilder filterBuilder = new FilterExpressionBuilder();
 
-        vectorStore.delete(
-                filterBuilder.eq("identity", identity).build()
+        String query = "@identity:{\"" + identity + "\"}";
+
+        System.out.println("Redis query = " + query);
+
+        SearchResult result = jedisPooled.ftSearch(
+                "nexacorp_index",
+                new Query(query).limit(0, 1000)
         );
+
+        List<redis.clients.jedis.search.Document> documents = result.getDocuments();
+
+        System.out.println("Identity = [" + identity + "]");
+        System.out.println("Matching chunks = " + documents.size());
+
+        if (documents.isEmpty()) {
+            return;
+        }
+
+        List<String> ids = new ArrayList<>();
+
+        for (redis.clients.jedis.search.Document document : documents) {
+
+            String redisKey = document.getId();
+
+            System.out.println("Redis key = " + redisKey);
+
+            String id = redisKey.startsWith("embedding:")
+                    ? redisKey.substring("embedding:".length())
+                    : redisKey;
+
+            ids.add(id);
+        }
+
+        vectorStore.delete(ids);
+
+        System.out.println("Deleted chunks = " + ids.size());
     }
 }

@@ -32,6 +32,14 @@ public class PdfIngestionService {
         return docs;
     }
 
+    public IngestedDocument ingest(String fileName) throws Exception {
+        File pdfFile = new File(PDF_DIRECTORY, fileName);
+        if (!pdfFile.exists()) {
+            throw new IOException("PDF file does not exist: " + pdfFile.getAbsolutePath());
+        }
+        return ingestSinglePdf(pdfFile);
+    }
+
     private IngestedDocument ingestSinglePdf(File pdfFile) throws IOException {
         log.info("Ingesting PDF: {}", pdfFile.getName());
 

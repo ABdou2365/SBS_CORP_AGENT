@@ -4,6 +4,7 @@ import com.nexacorp.ai.ingestion.db.DatabaseIngestionService;
 import com.nexacorp.ai.ingestion.model.IngestedDocument;
 import com.nexacorp.ai.ingestion.pdf.PdfIngestionService;
 import com.nexacorp.ai.ingestion.wiki.WikiIngestionService;
+import com.nexacorp.ai.lifecycle.model.SourceType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,19 @@ public class IngestionOrchestrator {
     private final PdfIngestionService pdfIngestionService;
     private final WikiIngestionService wikiIngestionService;
     private final DatabaseIngestionService databaseIngestionService;
+
+    public List<IngestedDocument> ingestBySourceType(SourceType sourceType, String fileName) throws Exception {
+        switch (sourceType) {
+            case PDF:
+                return List.of(pdfIngestionService.ingest(fileName));
+            case WIKI:
+                return List.of(wikiIngestionService.ingest(fileName));
+            case DATABASE:
+                return databaseIngestionService.ingestedDocument(fileName);
+            default:
+                throw new IllegalArgumentException("Unsupported source type: " + sourceType);
+        }
+    }
 
     public List<IngestedDocument> ingestAll() throws  Exception {
         List<IngestedDocument> docs = new ArrayList<>();
